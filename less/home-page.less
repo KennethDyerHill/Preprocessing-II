@@ -5,8 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    
     
     .text-content {
       width: 48%;
@@ -56,8 +55,9 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      .btn {
-        .btnmixin();
+
+      button{
+       .buttonmixin();
       }
     }
   }
@@ -67,10 +67,17 @@
     border-bottom: 2px dashed @silver;
     padding-bottom: 2%;
     padding-top: 2%;
+    @media @mobile {
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align:center;
+    }
   }
 
   .top-content {
     border-bottom: 2px dashed @silver;
     margin-bottom: 3%;
+    .mixin();
+    
   }
 }// home

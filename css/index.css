@@ -237,13 +237,31 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination button {
+  display: block;
+  background-color: #17A2B8;
+  margin: 0 10px 20px;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
 .home .header {
   display: flex;
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 2%;
   padding-top: 2%;
 }
+@media (max-width: 500px) {
+  .home .header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .home .top-content {
   border-bottom: 2px dashed #C0C0C0;
   margin-bottom: 3%;
+  border: 1px solid black;
 }

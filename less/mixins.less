@@ -1,12 +1,16 @@
 // Mixins in here
 
-.btnmixin (@button-bg, @width:200px, @white){
+.buttonmixin(){
         display: block;
         background-color: @button-bg;
         margin: 0 10px 20px;
-        width: @width;
+        width: 200px;
         height: 45px;
-        font-size: 3rem;
+        font-size: 2rem;
         border-radius: 10px;
         color:@white;
 }      
+
+.mixin() {
+    border: 1px solid black;
+}
