@@ -258,6 +258,8 @@ nav a {
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
+    width: 100% !important;
+    margin-left: 0 !important;
   }
 }
 .home .top-content {
