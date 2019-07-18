@@ -52,17 +52,25 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .btnmixin();
+      }
     }
   }
 
   .header {
     display:flex;
-    border-bottom: 2px dashed #C0C0C0;
+    border-bottom: 2px dashed @silver;
     padding-bottom: 2%;
     padding-top: 2%;
+  }
+
+  .top-content {
+    border-bottom: 2px dashed @silver;
+    margin-bottom: 3%;
   }
 }// home

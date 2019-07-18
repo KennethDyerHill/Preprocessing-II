@@ -243,3 +243,7 @@ nav a {
   padding-bottom: 2%;
   padding-top: 2%;
 }
+.home .top-content {
+  border-bottom: 2px dashed #C0C0C0;
+  margin-bottom: 3%;
+}
