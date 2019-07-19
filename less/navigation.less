@@ -4,13 +4,18 @@ nav {
     font-size: 20px;
     justify-content: space-evenly;
     margin-left: 40%;
+    
     a {
         margin-left: 15%;
         text-decoration: none;
         color: black;
         padding-top: 5%;
+        @media @mobile {
+            margin: 0%;
+        }
     }
     @media @mobile{
-        
+        margin: 0 auto;
+       width: 100%;
     }
 }

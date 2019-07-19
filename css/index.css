@@ -180,6 +180,17 @@ nav a {
   color: black;
   padding-top: 5%;
 }
+@media (max-width: 500px) {
+  nav a {
+    margin: 0%;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -212,6 +223,23 @@ nav a {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    width: 100%;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+  }
+  .home .inverse-content .text-content {
+    order: 1;
+    width: 100%;
+  }
+  .home .inverse-content .img-content {
+    order: 2     ;
+    width: 100%;
+    padding: 2%;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -233,9 +261,21 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100%;
+    padding: 10% 10%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .content-pick .destination button {
   display: block;
@@ -247,6 +287,13 @@ nav a {
   border-radius: 10px;
   color: #FFFFFF;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination button {
+    width: 100%;
+    justify-content: left;
+    margin: 0;
+  }
+}
 .home .header {
   display: flex;
   border-bottom: 2px dashed #C0C0C0;
@@ -255,15 +302,38 @@ nav a {
 }
 @media (max-width: 500px) {
   .home .header {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
-    width: 100% !important;
-    margin-left: 0 !important;
+  }
+}
+.home .header nav {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .home .header nav a {
+    text-align: center;
+    flex-wrap: wrap;
   }
 }
 .home .top-content {
   border-bottom: 2px dashed #C0C0C0;
   margin-bottom: 3%;
-  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .home .letsgo {
+    width: 100%;
+    flex-direction: column;
+  }
+  .home .letsgo .text-content {
+    order: 1;
+    width: 100%;
+    padding: 2%;
+  }
+  .home .letsgo .img-content {
+    order: 2;
+    width: 100%;
+    padding: 2%;
+  }
 }
